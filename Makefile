@@ -1,7 +1,7 @@
 CC = g++
 CFLAGS = -Wall
 LDFLAGS = 
-OBJFILES = User.o main.o
+OBJFILES = User.o Transaction.o main.o
 TARGET = main
 
 all: $(TARGET)

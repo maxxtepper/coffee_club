@@ -1,12 +1,17 @@
 #include "Transaction.h"
 
-Transaction::Transaction(std::string type, float value, std::string note) {
+Transaction::Transaction(int id, std::string type, float value, std::string note) {
+	id_ = id;
 	type_ = type;
 	value_ = value;
 	note_ = note;
 }
 
 Transaction::~Transaction() {
+}
+
+int Transaction::getId() {
+	return id_;
 }
 
 std::string Transaction::getType() {

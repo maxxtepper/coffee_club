@@ -7,14 +7,16 @@
 
 class Transaction {
 	public:
-		Transaction(std::string type, float value, std::string note);
+		Transaction(int id, std::string type, float value, std::string note);
 		~Transaction();
 
+		int getId();
 		std::string getType();
 		float getValue();
 		std::string getNote();
 
 	private:
+		int id_;
 		std::string type_;
 		float value_;
 		std::string note_;

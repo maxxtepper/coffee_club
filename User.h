@@ -4,6 +4,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include "Transaction.h"
 
 class User {
 	public:
@@ -11,8 +12,7 @@ class User {
 		~User();
 
 		std::string getName();
-		void addTransaction(std::string type, float value, std::string note);
-		void getTransaction
+		Transaction getTransaction(int id);
 	private:
 		std::string name_;
 };
