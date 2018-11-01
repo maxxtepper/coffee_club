@@ -11,6 +11,8 @@ class User {
 		~User();
 
 		std::string getName();
+		void addTransaction(std::string type, float value, std::string note);
+		void getTransaction
 	private:
 		std::string name_;
 };
